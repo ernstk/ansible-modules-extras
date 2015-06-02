@@ -78,6 +78,7 @@ options:
       - ruby
       - webpi
       - windowsfeatures
+      - url specifying the source to find the package(s) to install.
     default: chocolatey
     aliases: []
   logPath:
@@ -117,4 +118,9 @@ EXAMPLES = '''
   win_chocolatey:
     name: ARRv3
     source: webpi
+
+  #Install git using an alternate source:
+  win_chocolatey:
+    name: git
+    source: https://somewhere/api/v2/
 '''
